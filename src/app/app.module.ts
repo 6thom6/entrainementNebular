@@ -31,7 +31,6 @@ import { UpdatesoinComponent } from './components/soin/updatesoin/updatesoin.com
 import { NewvaccinComponent } from './components/vaccination/newvaccin/newvaccin.component';
 import { UpdatevaccinationComponent } from './components/vaccination/updatevaccination/updatevaccination.component';
 import { DeletevaccinationComponent } from './components/vaccination/deletevaccination/deletevaccination.component';
-import { DetailComponent } from './components/cheval/detail/detail.component';
 import {ChevalService} from './service/cheval.service';
 import {CourseService} from './service/course.service';
 import {EmployeService} from './service/employe.service';
@@ -59,6 +58,9 @@ import { HistoriqueComponent } from './components/historique/historique/historiq
 import { ProprietaireComponent } from './components/proprietaire/proprietaire/proprietaire.component';
 import { SoinComponent } from './components/soin/soin/soin.component';
 import { VaccinationComponent } from './components/vaccination/vaccination/vaccination.component';
+import { HttpClientModule } from '@angular/common/http';
+import { Ng2SmartTableModule } from 'ng2-smart-table';
+
 
 
 @NgModule({
@@ -89,7 +91,6 @@ import { VaccinationComponent } from './components/vaccination/vaccination/vacci
     NewvaccinComponent,
     UpdatevaccinationComponent,
     DeletevaccinationComponent,
-    DetailComponent,
     ListComponent,
     DetailchevalComponent,
     DetailcourseComponent,
@@ -126,6 +127,8 @@ import { VaccinationComponent } from './components/vaccination/vaccination/vacci
     ReactiveFormsModule,
     NbDatepickerModule.forRoot(),
     NbDialogModule.forRoot(),
+    HttpClientModule,
+    Ng2SmartTableModule,
 
 
   ],

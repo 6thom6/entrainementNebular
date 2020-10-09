@@ -14,7 +14,6 @@ import { DetailemployeComponent } from './components/employe/detailemploye/detai
 import { EmployeComponent } from './components/employe/employe/employe.component';
 import { NewemployeComponent } from './components/employe/newemploye/newemploye.component';
 import { UpdateemployeComponent } from './components/employe/updateemploye/updateemploye.component';
-import { DeleteentrainementComponent } from './components/entrainement/deleteentrainement/deleteentrainement.component';
 import { DetailentrainementComponent } from './components/entrainement/detailentrainement/detailentrainement.component';
 import { EntrainementComponent } from './components/entrainement/entrainement/entrainement.component';
 import { NewentrainementComponent } from './components/entrainement/newentrainement/newentrainement.component';

@@ -60,8 +60,8 @@ export class NavComponent implements OnInit {
 
       ]
     },
-    {link :'/vaccination', title : 'vaccinatin', icon : 'color-picker-outline', children : [
-      {link : '/vaccination/detailhistorique', title : 'Liste des vaccins'},
+    {link :'/vaccination', title : 'vaccination', icon : 'color-picker-outline', children : [
+      {link : '/vaccination/detailvaccination', title : 'Liste des vaccins'},
       {link : '/vaccination/newvaccination', title : 'Ajouter un vaccin'},
       {link : '/vaccination/updatevaccination', title : 'Mettre un vaccin a jour'},
       {link : '/vaccination/deletevaccination', title : 'Supprimer une vaccination'},

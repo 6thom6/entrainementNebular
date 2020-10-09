@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { vaccination } from 'src/app/models/vaccination.model';
+import { VaccinationService } from 'src/app/service/vaccination.service';
 
 @Component({
   selector: 'app-detailvaccination',
@@ -7,9 +9,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetailvaccinationComponent implements OnInit {
 
-  constructor() { }
+  public Vaccinations : vaccination [] = [];
 
-  ngOnInit(): void {
+  settings = {
+    columns: {
+     
+      id_Vaccination: {
+        title: 'Id_Vaccination',  
+      },
+      nom_Vaccin: {
+        title: 'Nom du Vaccin'
+      },
+      delai_Indisponibilite: {
+        title: 'Delai Indisponibilite'
+      }
+    }
+  };
+
+  constructor(private _service : VaccinationService) { }
+
+  ngOnInit(): void 
+  {
+    this._service.get().subscribe(data => this.Vaccinations = data)
   }
 
 }

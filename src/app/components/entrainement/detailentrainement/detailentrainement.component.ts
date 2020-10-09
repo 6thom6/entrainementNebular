@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { entrainment } from 'src/app/models/entrainement.model';
+import { EntrainementService } from 'src/app/service/entrainement.service';
 
 @Component({
   selector: 'app-detailentrainement',
@@ -7,9 +9,42 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetailentrainementComponent implements OnInit {
 
-  constructor() { }
+  public entrainements : entrainment [] = [];
 
-  ngOnInit(): void {
+  settings = {
+    columns: {
+
+      date_Entrainement: {
+        title: 'Date entrainement',
+      },
+      id_Entrainement: {
+        title: 'Id entrainement'
+      },
+      plat: {
+        title: 'Plat'
+      },
+      obstacle: {
+        title: 'Obstacle'
+      },
+      marcheur: {
+        title: 'Marcheur'
+      },
+      pre: {
+        title: 'Pre'
+      },
+      duree: {
+        title: 'Duree'
+      }
+
+    }
+  }
+
+  constructor(private _service : EntrainementService) { }
+
+  ngOnInit(): void 
+  {
+    this._service.get().subscribe(data => {this.entrainements = data;
+    console.log(data)})
   }
 
 }

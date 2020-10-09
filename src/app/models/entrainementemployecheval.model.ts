@@ -1,6 +1,10 @@
-export class entrainment {
+export class entrainementemployecheval
+ {
     date_Entrainement : Date;
-    id_Entrainement : string;
+    nom_Employe : string;
+    nom_Cheval : string;
+    age : number;
+    sexe : string;
     plat : string;
     obstacle : string;
     marcheur : string;

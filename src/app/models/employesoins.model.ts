@@ -1,4 +1,4 @@
-export class soins {
+export class soinsemploye {
     id_Soins : number;
     id_Cheval : number;
     id_Employe : number;
