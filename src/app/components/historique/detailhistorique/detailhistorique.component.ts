@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { historique } from 'src/app/models/historique.model';
+import { ChevalHistorique } from 'src/app/models/chevalhistorique.model';
 import { HistoriqueService } from 'src/app/service/historique.service';
 
 @Component({
@@ -9,16 +9,28 @@ import { HistoriqueService } from 'src/app/service/historique.service';
 })
 export class DetailhistoriqueComponent implements OnInit {
 
-  public historiques : historique[] = [];
+  public historiques : ChevalHistorique[] = [];
   
   settings = {
     columns: {
      
-      id_Historique: {
-        title: 'id historique',  
+      nom_Cheval: {
+        title: 'Nom cheval',  
       },
-      id_Cheval: {
-        title: 'Id_Cheval'
+      pere_Cheval: {
+        title: 'Pere cheval'
+      }, 
+      mere_Cheval: {
+        title: 'mere cheval'
+      },
+      race: {
+        title: 'race'
+      },
+      age: {
+        title: 'age'
+      },
+      sexe: {
+        title: 'sexe'
       },
       debourage: {
         title: 'Debourage'
@@ -38,7 +50,7 @@ export class DetailhistoriqueComponent implements OnInit {
       }
     }
   };
-  constructor(private _service : HistoriqueService) { }
+  constructor(private _service : ChevalHistorique) { }
 
   ngOnInit(): void 
   {

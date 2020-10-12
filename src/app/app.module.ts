@@ -9,27 +9,20 @@ import { NavComponent } from './shared/nav/nav.component';
 import { FourofourComponent } from './shared/fourofour/fourofour.component';
 import { NewchevalComponent } from './components/cheval/newcheval/newcheval.component';
 import { UpdatechevalComponent } from './components/cheval/updatecheval/updatecheval.component';
-import { DeletechevalComponent } from './components/cheval/deletecheval/deletecheval.component';
 import { NewcourseComponent } from './components/course/newcourse/newcourse.component';
 import { UpdatecourseComponent } from './components/course/updatecourse/updatecourse.component';
-import { DeletecourseComponent } from './components/course/deletecourse/deletecourse.component';
 import { NewemployeComponent } from './components/employe/newemploye/newemploye.component';
 import { UpdateemployeComponent } from './components/employe/updateemploye/updateemploye.component';
 import { NewentrainementComponent } from './components/entrainement/newentrainement/newentrainement.component';
 import { UpdateentrainementComponent } from './components/entrainement/updateentrainement/updateentrainement.component';
-import { DeleteentrainementComponent } from './components/entrainement/deleteentrainement/deleteentrainement.component';
 import { NewhistoriqueComponent } from './components/historique/newhistorique/newhistorique.component';
 import { UpdatehistoriqueComponent } from './components/historique/updatehistorique/updatehistorique.component';
-import { DeletehistoriqueComponent } from './components/historique/deletehistorique/deletehistorique.component';
 import { NewproprietaireComponent } from './components/proprietaire/newproprietaire/newproprietaire.component';
 import { UpdateproprietaireComponent } from './components/proprietaire/updateproprietaire/updateproprietaire.component';
-import { DeleteproprietaireComponent } from './components/proprietaire/deleteproprietaire/deleteproprietaire.component';
 import { NewsoinComponent } from './components/soin/newsoin/newsoin.component';
-import { DeletesoinComponent } from './components/soin/deletesoin/deletesoin.component';
 import { UpdatesoinComponent } from './components/soin/updatesoin/updatesoin.component';
 import { NewvaccinComponent } from './components/vaccination/newvaccin/newvaccin.component';
 import { UpdatevaccinationComponent } from './components/vaccination/updatevaccination/updatevaccination.component';
-import { DeletevaccinationComponent } from './components/vaccination/deletevaccination/deletevaccination.component';
 import {ChevalService} from './service/cheval.service';
 import {CourseService} from './service/course.service';
 import {EmployeService} from './service/employe.service';
@@ -69,27 +62,20 @@ import { Ng2SmartTableModule } from 'ng2-smart-table';
     FourofourComponent,
     NewchevalComponent,
     UpdatechevalComponent,
-    DeletechevalComponent,
     NewcourseComponent,
     UpdatecourseComponent,
-    DeletecourseComponent,
     NewemployeComponent,
     UpdateemployeComponent,
     NewentrainementComponent,
     UpdateentrainementComponent,
-    DeleteentrainementComponent,
     NewhistoriqueComponent,
     UpdatehistoriqueComponent,
-    DeletehistoriqueComponent,
     NewproprietaireComponent,
     UpdateproprietaireComponent,
-    DeleteproprietaireComponent,
     NewsoinComponent,
-    DeletesoinComponent,
     UpdatesoinComponent,
     NewvaccinComponent,
     UpdatevaccinationComponent,
-    DeletevaccinationComponent,
     ListComponent,
     DetailchevalComponent,
     DetailcourseComponent,

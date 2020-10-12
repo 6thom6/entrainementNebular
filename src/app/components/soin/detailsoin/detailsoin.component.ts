@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { soins } from 'src/app/models/soin.model';
+import { chevalsoins } from 'src/app/models/chevalsoins.model';
 import { SoinService } from 'src/app/service/soin.service';
 
 @Component({
@@ -9,20 +9,20 @@ import { SoinService } from 'src/app/service/soin.service';
 })
 export class DetailsoinComponent implements OnInit {
 
-  public Soinss : soins [] = [];
+  public soins : chevalsoins [] = [];
 
   settings = {
     columns: {
-      id_Soins: {
-        title: 'Id_Soins'
-      },
-      id_Cheval: {
-        title: 'Id_Cheval',
+     // id_Soins: {
+     //   title: 'Id_Soins'
+     // },
+     nom_Cheval: {
+        title: 'nom_Cheval',
         
       },
-      id_Employe: {
-        title: 'Id_Employe'
-      },
+     // id_Employe: {
+    //  title: 'Id_Employe'
+    //},
       alimentation: {
         title: 'Alimentation'
       },
@@ -55,7 +55,7 @@ export class DetailsoinComponent implements OnInit {
 
   ngOnInit(): void 
   {
-    this._service.get().subscribe(data => this.Soinss = data)       
+    this._service.get().subscribe(data => this.soins = data)       
 
   }
 

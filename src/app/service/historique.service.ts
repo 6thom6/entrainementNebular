@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { historique } from '../models/historique.model';
+import { ChevalHistorique } from '../models/chevalhistorique.model';
 
 @Injectable({
   providedIn: 'root'
@@ -10,12 +10,12 @@ export class HistoriqueService {
 
   constructor(private _http:HttpClient) { }
 
-  public get(): Observable<historique[]>
+  public get(): Observable<ChevalHistorique[]>
   {
-    return this._http.get<historique[]>("https://localhost:5001/api/historique");
+    return this._http.get<ChevalHistorique[]>("https://localhost:5001/api/historique");
   }
-  public post(Historique : historique): void
+  public post(Historique : ChevalHistorique): void
   {
-    this._http.post<historique>("https://localhost:5001/api/historique",Historique);
+    this._http.post<ChevalHistorique>("https://localhost:5001/api/historique",Historique);
   }
 }

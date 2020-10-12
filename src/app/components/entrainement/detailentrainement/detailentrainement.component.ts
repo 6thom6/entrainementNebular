@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { entrainment } from 'src/app/models/entrainement.model';
+import { entrainementemployecheval } from 'src/app/models/entrainementemployecheval.model';
 import { EntrainementService } from 'src/app/service/entrainement.service';
 
 @Component({
@@ -9,7 +9,7 @@ import { EntrainementService } from 'src/app/service/entrainement.service';
 })
 export class DetailentrainementComponent implements OnInit {
 
-  public entrainements : entrainment [] = [];
+  public entrainements :  entrainementemployecheval [] = [];
 
   settings = {
     columns: {
@@ -17,8 +17,11 @@ export class DetailentrainementComponent implements OnInit {
       date_Entrainement: {
         title: 'Date entrainement',
       },
-      id_Entrainement: {
-        title: 'Id entrainement'
+      nom_Employe :{
+        title : 'cavalier'
+      },
+      nom_Cheval : {
+        title : 'cheval'
       },
       plat: {
         title: 'Plat'
