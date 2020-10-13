@@ -14,9 +14,11 @@ export class DetailemployeComponent implements OnInit {
   settings = {
     columns: {
      
-      id_Employe: {
-        title: 'id Employe',  
-      },
+      //id_Employe: {
+        
+      //  editable: false,
+      //  addable: false,
+     // },
       nom_Employe: {
         title: 'nom employe'
       },
