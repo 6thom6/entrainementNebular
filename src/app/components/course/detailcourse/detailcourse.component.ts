@@ -69,6 +69,9 @@ export class DetailcourseComponent implements OnInit {
         title: 'avis'
       },
 
+    },
+    actions:{
+      add :false
     }
   }
 

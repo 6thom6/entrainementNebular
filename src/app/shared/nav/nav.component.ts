@@ -21,6 +21,7 @@ export class NavComponent implements OnInit {
       ]},
       {link : '/course', title : 'Courses', icon : 'award-outline', children : [
         {link : '/course/detailcourse', title : "Liste des courses"},
+        {link : '/course/newcourse', title : "ajouter course"}
       ]},
 
       {link : '/employe', title : 'Employés', icon : 'people-outline', children : [
